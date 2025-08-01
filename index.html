@@ -1,0 +1,54 @@
+<div class="header">
+    <h1>WINNING HIGH LEVEL</h1>
+  </div>
+
+  <div class="main">
+    <div class="left">
+      <div class="chart">
+        <p><strong>INFORMASI</strong></p>
+        <canvas id="barChart" width="350" height="300"></canvas>
+        <div style="text-align: left; margin-top: 20px;">
+          <p style="color: #00ccff">PRAGMATIC PLAY</p>
+          <p style="color: #29d7ff">PG-SOFT</p>
+          <p style="color: #32aaff">JDB</p>
+          <p style="color: #5d6dff">HABANERO</p>
+          <p style="color: #8a66ff">AFB-GAMING</p>
+          <p style="color: #ff4dd2">MM-GAMING</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="welcome">
+        <h2>WELCOME</h2>
+        <div class="form-group">
+          <input type="text" id="userId" placeholder="INPUT USER ID" maxlength="12" pattern="[a-zA-Z0-9]*" />
+          <select id="saldo">
+            <option value="">BALANCE TOP-UP</option>
+            <option value="1">25,000 - 100,000</option>
+            <option value="2">100,000 - 1,000,000</option>
+            <option value="3">1,000,000 - 10,000,000</option>
+            <option value="4">10,000,000 - 100,000,000</option>
+            <option value="5">100,000,000 - 1,000,000,000</option>
+          </select>
+        </div>
+        <button onclick="handleGo()">GO</button>
+        <div class="highlight" id="result"></div>
+        <div id="notification" class="notification"></div>
+      </div>
+
+      <div class="button-grid">
+        <div class="game-button" onclick="goTo('AFB GAMING')" style="color:#8a66ff">AFB GAMING</div>
+        <div class="game-button" onclick="goTo('PRAGMATIC PLAY')" style="color:#00ccff">PRAGMATIC PLAY</div>
+        <div class="game-button" onclick="goTo('PG-SOFT')" style="color:#29d7ff">PG-SOFT</div>
+        <div class="game-button" onclick="goTo('JDB')" style="color:#32aaff">JDB</div>
+        <div class="game-button" onclick="goTo('HABANERO')" style="color:#5d6dff">HABANERO</div>
+        <div class="game-button" onclick="goTo('MM-GAMING')" style="color:#ff4dd2">MM-GAMING</div>
+      </div>
+
+      <a href="https://wa.me/6281234567890" class="whatsapp-button" target="_blank">CLAIM WIN CODE VIA WHATSAPP</a>
+      <a href="https://t.me/warisanbolaresmi" class="telegram-button" target="_blank">CLAIM WIN CODE VIA TELEGRAM</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
